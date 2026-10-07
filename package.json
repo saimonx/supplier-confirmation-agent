@@ -1,0 +1,15 @@
+{
+  "name": "supplier-confirmation-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agent that confirms hotels by email and activities and transfers by WhatsApp, extracted from the NomadFlight travel-agency platform",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test/automationRules.test.js && node test/hotel.test.js && node test/telegramReview.test.js && node test/whatsappConfirmation.test.js"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.6.5",
+    "mongoose": "^9.0.0",
+    "openai": "^7.28.0"
+  }
+}
